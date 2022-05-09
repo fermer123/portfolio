@@ -4,8 +4,16 @@ import { AiOutlineUser } from 'react-icons/ai';
 import { TiGroupOutline } from 'react-icons/ti';
 import { BiMessageRoundedDots } from 'react-icons/bi';
 import { BsArrowDownCircle } from 'react-icons/bs';
+import { useState } from 'react';
 
 const Nav = () => {
+  const [state, setState] = useState(false);
+
+  const toggle = (e) => {
+    const arr = ['home', 'about', 'members', 'contact', 'footer'];
+    console.log(e);
+  };
+
   return (
     <div className={style.navigation}>
       <a href='#home'>

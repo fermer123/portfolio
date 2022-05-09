@@ -1,6 +1,6 @@
 import style from './Home.module.scss';
-import img from '../../png/src/png/src/png/img2.jpg';
-import Buttons from '../button/button';
+import img from '../../png/img2.jpg';
+import Button from '../button/Button';
 import { BsMouse } from 'react-icons/bs';
 
 const Home = () => {
@@ -31,13 +31,15 @@ const Home = () => {
       <h2>
         <span>About Me</span> <br />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id
-          quos deserunt, maxime sint sunt tempore quidem ad praesentium itaque,
-          aspernatur, magnam culpa iste adipisci?
+          Frontend разработкой занимаюсь параллельно. Есть свои проекты на
+          GitHub с использованием React, React-redux, redux toolkit, typescript,
+          CSS/scss/styled-components. Разработка для меня - это больше чем
+          работа, это хобби. Поэтому даже в нерабочее время люблю изучать новые
+          технологии и писать свои проекты.
         </p>
       </h2>
 
-      <Buttons />
+      <Button />
     </div>
   );
 };
