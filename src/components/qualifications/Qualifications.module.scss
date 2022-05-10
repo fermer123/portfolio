@@ -5,7 +5,7 @@
 .qual_container {
   position: absolute;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   height: 80%;
   width: 90%;
@@ -17,11 +17,12 @@
     position: relative;
     height: 550px;
     min-width: 40%;
-    background: rgb(9, 6, 31);
+    background-color: rgb(9, 6, 31);
     border-radius: 20px;
     margin: 0 20px 0 0;
+    display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     .qual_content {
       height: 85%;
@@ -30,51 +31,51 @@
       margin-top: 20px;
       background-size: contain;
       background-position: center;
-      .html {
-        background: url('../../png/html.png');
-        background-position: center;
-        background-size: 60px;
-      }
-      .css {
-        background: url('../../png/css.png');
-        background-position: center;
-        background-size: 60px;
-      }
-      .js {
-        background: url('../../png/js.jpg');
-        background-position: center;
-        background-size: 60px;
-      }
-      .react {
-        background: url('../../png/react.png');
-        background-position: center;
-        background-size: 60px;
-      }
-      .redux {
-        background: url('../../png/red.png');
-        background-position: center;
-        background-size: 60px;
-      }
-      .scss {
-        background: url('../../png/sass.png');
-        background-position: center;
-        background-size: 60px;
-      }
-      .ts {
-        background: url('../../png/ts.png');
-        background-position: center;
-        background-size: 60px;
-      }
-      .bs {
-        background: url('../../png/bootstrap.png');
-        background-position: center;
-        background-size: 60px;
-      }
     }
     h1 {
       font-size: 20px;
       text-transform: uppercase;
       margin-top: 20px;
+    }
+    .html {
+      background: url('../../png/html.png');
+      background-position: center;
+      background-size: 66px;
+    }
+    .css {
+      background: url('../../png/css.png');
+      background-position: center;
+      background-size: 60px;
+    }
+    .js {
+      background: url('../../png/js.jpg');
+      background-position: center;
+      background-size: 90px;
+    }
+    .react {
+      background: url('../../png/react.png');
+      background-position: center;
+      background-size: 90px;
+    }
+    .redux {
+      background: url('../../png/red.png');
+      background-position: center;
+      background-size: 64px;
+    }
+    .scss {
+      background: url('../../png/sass.png');
+      background-position: center;
+      background-size: 80px;
+    }
+    .ts {
+      background: url('../../png/ts.png');
+      background-position: center;
+      background-size: 90px;
+    }
+    .bs {
+      background: url('../../png/bootstrap.png');
+      background-position: center;
+      background-size: 90px;
     }
   }
 }

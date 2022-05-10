@@ -4,7 +4,7 @@ import Qualifications from '../qualifications/Qualifications';
 
 const About = () => {
   return (
-    <div id='about' className={index.container + ' ' + style.about_container}>
+    <div id='about' className={style.about_container}>
       <Qualifications />
     </div>
   );
