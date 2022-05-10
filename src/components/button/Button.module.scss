@@ -1,0 +1,101 @@
+@import '../../default_variables.scss';
+
+.button_container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  width: 60%;
+  padding: 0;
+  a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+  }
+  .btn {
+    height: 80px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: $color-pri;
+    transition: 0.2s ease;
+    overflow: hidden;
+  }
+  .sec {
+    background-color: $color-sec-light;
+    &:hover {
+      border: 2px solid $color-pri;
+      background-color: transparent;
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 65%;
+      background-color: rgba(255, 255, 255, 0.164);
+      transition: 0.2s ease;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 50%;
+      background-color: rgba(255, 255, 255, 0.189);
+      transition: 0.4s ease;
+    }
+    &:hover::before {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 0;
+      left: 0;
+    }
+    &:hover::after {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 0;
+      left: 0;
+    }
+  }
+  .pri {
+    border: 2px solid $color-sec;
+    &:hover {
+      border: none;
+      background-color: $color-sec;
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 0%;
+      left: 0;
+      transition: 0.2s ease;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 0%;
+      left: 0;
+      transition: 0.4s ease;
+    }
+    &:hover::before {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 65%;
+      background-color: rgba(255, 255, 255, 0.274);
+    }
+    &:hover::after {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 50%;
+      background-color: rgba(255, 255, 255, 0.189);
+    }
+  }
+}

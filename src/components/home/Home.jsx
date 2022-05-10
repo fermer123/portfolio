@@ -18,7 +18,7 @@ const Home = () => {
           <span className={style.circle}></span>
         </div>
 
-        <img src={img} alt='' />
+        <img className={style.main_img} src={img} alt='' />
       </div>
 
       <a href='#footer' className={style.scroll_down}>
@@ -38,7 +38,6 @@ const Home = () => {
           технологии и писать свои проекты.
         </p>
       </h2>
-
       <Button />
     </div>
   );
