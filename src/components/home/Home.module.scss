@@ -1,3 +1,5 @@
+@import '../../default_variables.scss';
+
 .home_container {
   position: relative;
   min-height: 100vh;
@@ -7,6 +9,39 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  img {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid rgb(108, 161, 197);
+    transform: translate(-200px);
+    opacity: 0;
+    animation: fade-in 1s ease 1 0.5s forwards;
+  }
+  h2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    margin-top: 50px;
+    span {
+      font-size: 25px;
+      opacity: 0.8;
+      padding-bottom: 5px;
+      border-bottom: 2px solid $color-pri;
+      font-family: 'Open Sans Condensed', sans-serif;
+    }
+    p {
+      font-size: 20px;
+      opacity: 1;
+      font-weight: 100;
+      margin-top: 1px;
+      font-family: 'Open Sans', sans-serif;
+    }
+  }
   .logo {
     position: inherit;
     margin-top: -50px;
@@ -16,7 +51,7 @@
     justify-content: center;
     border-radius: 50%;
     user-select: none;
-    .main_img {
+    .hover_show {
       position: absolute;
       height: 300px;
       width: 300px;
@@ -26,17 +61,115 @@
       align-items: center;
       z-index: 5;
       cursor: pointer;
-      &:active {
-        animation: spin 8s linear 1s infinite;
+      &:hover {
+        animation: showspin 8s linear 1s infinite;
+        .circle {
+          opacity: 1;
+          &:nth-child(1) {
+            background: url('../../png/html.png');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            transform: translateY(-210%);
+          }
+          &:nth-child(2) {
+            background: url('../../png/css.png');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            transform: translateX(150%) translateY(-150%);
+          }
+          &:nth-child(3) {
+            background: url('../../png/js.jpg');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            transform: translateY(210%);
+          }
+          &:nth-child(4) {
+            background: url('../../png/bootstrap.png');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            transform: translateX(150%) translateY(150%);
+          }
+          &:nth-child(5) {
+            background: url('../../png/react.png');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            transform: translateY(210%);
+          }
+          &:nth-child(6) {
+            background: url('../../png/kotlin.png');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            transform: translateX(-150%) translateY(150%);
+          }
+          &:nth-child(7) {
+            background: url('../../png/c-plus-plus.png');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            transform: translateY(-210%);
+          }
+          &:nth-child(8) {
+            background: url('../../png/c-sharp.png');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            transform: translateX(-150%) translateY(-150%);
+          }
+        }
       }
-    }
-    .circle {
     }
   }
 }
+.scroll_down {
+  transform: rotate(90deg);
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  .scroll {
+    transform: rotate(-90deg);
+    font-size: 20px;
+  }
+  hr {
+    background-color: blue;
+    width: 20px;
+  }
+  h5 {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 100;
+  }
+}
+.circle {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgb(4, 4, 44);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease;
+  opacity: 0;
+}
 
-@keyframes spin {
+@keyframes showspin {
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes fade-in {
+  to {
+    transform: translate(0);
+    opacity: 1;
   }
 }
