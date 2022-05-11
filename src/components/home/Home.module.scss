@@ -49,6 +49,7 @@
     width: 520px;
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 50%;
     user-select: none;
     .hover_show {
@@ -80,11 +81,11 @@
             transform: translateX(150%) translateY(-150%);
           }
           &:nth-child(3) {
-            background: url('../../png/js.jpg');
+            background: url('../../png/js.png');
             background-size: cover;
             background-position: center;
             position: absolute;
-            transform: translateY(210%);
+            transform: translateX(210%);
           }
           &:nth-child(4) {
             background: url('../../png/bootstrap.png');
@@ -112,7 +113,7 @@
             background-size: cover;
             background-position: center;
             position: absolute;
-            transform: translateY(-210%);
+            transform: translateX(-210%);
           }
           &:nth-child(8) {
             background: url('../../png/red.png');
