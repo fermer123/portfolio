@@ -1,5 +1,5 @@
 import style from './Contact.module.scss';
-import index from '../index.module.scss';
+import index from '../../index.module.scss';
 import { GoMarkGithub } from 'react-icons/go';
 import { BsTelegram } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';

@@ -99,3 +99,34 @@
     }
   }
 }
+
+@media (max-width: 820px) {
+  .button_container {
+    width: 100%;
+    .btn {
+      height: 80px;
+      width: 200px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .button_container {
+    width: 100%;
+    margin-top: 60px;
+    .btn {
+      height: 80px;
+      width: 150px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .button_container {
+    width: 100%;
+    margin-top: 60px;
+    .btn {
+      height: 80px;
+      width: 150px;
+    }
+  }
+}

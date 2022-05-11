@@ -31,8 +31,8 @@ const Home = () => {
       <h2>
         <span>About Me</span> <br />
         <p>
-          My name is Igor. I'm doing front end development. There are projects
-          on GitHub using React, React-redux, reduxtoolkit, typescript,
+          My name is Igor. I'm frontend developer. I`v got any projects on my
+          GitHub by using React, React-redux, reduxtoolkit, typescript,
           MaterialUi, bootstrap, css/scss/styled-components, webpack.
           Development for me is more than a job, it's a hobby. Therefore, even
           after hours, I like to study new technologies and write my own
