@@ -11,7 +11,7 @@
   padding: 30px;
   h1 {
     margin: 0 auto;
-    font-size: 22px;
+    font-size: 25px;
     font-family: 'Open Sans Condensed';
     color: $color-pri;
   }
@@ -33,7 +33,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // transition: background 0.3s ease transform 0.2s ease;
     &:hover {
       background: rgba(255, 255, 255, 0.096);
       transform: scale(1.1);
@@ -44,7 +43,7 @@
     }
     h2 {
       position: relative;
-      margin-top: 15px;
+      margin-top: 30px;
       font-size: 21px;
       font-weight: 500;
       display: flex;
@@ -56,7 +55,7 @@
         font-size: 13px;
         font-weight: 100;
         margin-top: 3px;
-        color: rgb(202, 202, 202я);
+        color: $color-pri;
       }
     }
   }

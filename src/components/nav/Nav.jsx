@@ -7,13 +7,6 @@ import { BsArrowDownCircle } from 'react-icons/bs';
 import { useState } from 'react';
 
 const Nav = () => {
-  const [state, setState] = useState(false);
-
-  const toggle = (e) => {
-    const arr = ['home', 'about', 'members', 'contact', 'footer'];
-    console.log(e);
-  };
-
   return (
     <div className={style.navigation}>
       <a href='#home'>
@@ -22,15 +15,15 @@ const Nav = () => {
       <a href='#about'>
         <AiOutlineUser className={style.icon} />
       </a>
-      <a href='#members'>
+      {/* <a href='#members'>
         <TiGroupOutline className={style.icon} />
-      </a>
+      </a> */}
       <a href='#contact'>
         <BiMessageRoundedDots className={style.icon} />
       </a>
-      <a href='#footer'>
+      {/* <a href='#footer'>
         <BsArrowDownCircle className={style.icon} />
-      </a>
+      </a> */}
     </div>
   );
 };

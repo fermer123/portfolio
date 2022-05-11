@@ -31,7 +31,10 @@ const Contact = () => {
           </h2>
         </a>
 
-        <a href='' className={style.contact + ' ' + style.linked}>
+        <a
+          href='https://www.linkedin.com/in/smolin-igor-708478237/'
+          className={style.contact + ' ' + style.linked}
+        >
           <BsLinkedin className={style.icon} />
           <h2>
             LinkedIn<span>smolin-igor</span>
