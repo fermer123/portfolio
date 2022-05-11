@@ -31,11 +31,11 @@ const Home = () => {
       <h2>
         <span>About Me</span> <br />
         <p>
-          Frontend разработкой занимаюсь параллельно. Есть свои проекты на
-          GitHub с использованием React, React-redux, redux toolkit, typescript,
-          CSS/scss/styled-components. Разработка для меня - это больше чем
-          работа, это хобби. Поэтому даже в нерабочее время люблю изучать новые
-          технологии и писать свои проекты.
+          My name is Igor. I'm doing front end development. There are projects
+          on GitHub using React, React-redux, reduxtoolkit, typescript,
+          CSS/scss/styled-components. Development for me is more than a job,
+          it's a hobby. Therefore, even after hours, I like to study new
+          technologies and write my own projects.
         </p>
       </h2>
       <Button />
