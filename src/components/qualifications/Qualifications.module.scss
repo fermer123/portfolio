@@ -79,3 +79,56 @@
     }
   }
 }
+
+@media (max-width: 820px) {
+  .qual_text {
+    font-size: 30px;
+  }
+  .qual_container {
+    height: 80%;
+    width: 90%;
+    .qual {
+      position: relative;
+      height: 80%;
+      min-width: 90%;
+      margin: 0 30px 0 0;
+      .qual_content {
+        height: 85%;
+        width: 90%;
+        border-radius: 15px;
+        margin-top: 20px;
+      }
+      h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .qual_text {
+    font-size: 20px;
+  }
+  .qual_container {
+    height: 80%;
+    width: 90%;
+    .qual {
+      position: relative;
+      height: 80%;
+      min-width: 90%;
+      margin: 0 30px 0 0;
+      .qual_content {
+        height: 85%;
+        width: 90%;
+        border-radius: 15px;
+        margin-top: 20px;
+      }
+      h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-top: 20px;
+      }
+    }
+  }
+}
