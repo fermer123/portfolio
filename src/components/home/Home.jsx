@@ -33,9 +33,10 @@ const Home = () => {
         <p>
           My name is Igor. I'm doing front end development. There are projects
           on GitHub using React, React-redux, reduxtoolkit, typescript,
-          CSS/scss/styled-components. Development for me is more than a job,
-          it's a hobby. Therefore, even after hours, I like to study new
-          technologies and write my own projects.
+          MaterialUi, bootstrap, css/scss/styled-components, webpack.
+          Development for me is more than a job, it's a hobby. Therefore, even
+          after hours, I like to study new technologies and write my own
+          projects.
         </p>
       </h2>
       <Button />
