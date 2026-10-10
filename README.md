@@ -1,7 +1,59 @@
-# [Igor Smolin](https://fermer123.github.io/portfolio/#about) — portfolio
+# Портфолио Игоря Смолина
 
-## Deployment
+[Открыть сайт](https://fermer123.github.io/portfolio/)
+
+Личное портфолио Full Stack-разработчика. На сайте собраны опыт работы, образование, основные технологии и публикация. Интерфейс доступен на русском и английском языках.
+
+## Стек
+
+- React и TypeScript
+- Vite и Sass Modules
+- i18next для переключения языков
+- Playwright для браузерных smoke-тестов
+- GitHub Pages для публикации
+
+## Запуск на своём компьютере
+
+Нужен Node.js **20.19+** или **22.12+**.
+
+```sh
+npm ci
+npm run dev
+```
+
+Vite покажет адрес локального сайта в терминале.
+
+## Проверки перед публикацией
+
+```sh
+npm run typecheck
+npm run lint
+npm run spellcheck
+npm run format:check
+npm run test:e2e
+npm run build
+```
+
+Браузерные тесты запускаются в установленном Chrome или Edge. Скачивать браузер через Playwright не нужно, если один из них уже есть на компьютере.
+
+## Изображения
+
+Исходные изображения лежат в `src/assets/images`, готовые WebP-файлы — в `src/assets/images/optimized`.
+
+Если заменил исходные JPG или PNG, пересоздай WebP:
+
+```sh
+npm run optimize:images
+```
+
+## Публикация
+
+При каждом push в `main` GitHub Actions запускает проверки. Если они проходят, сайт автоматически публикуется на GitHub Pages.
+
+Для ручной публикации из локальной копии можно выполнить:
 
 ```sh
 npm run deploy
 ```
+
+Команда сама соберёт проект и отправит результат в ветку `gh-pages`. Для этого в Git должны быть настроены доступ к репозиторию и автор пользователя.
