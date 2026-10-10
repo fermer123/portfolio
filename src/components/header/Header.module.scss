@@ -1,9 +1,7 @@
 @use '../../default_variables' as *;
 
 .header {
-  position: sticky;
   z-index: 20;
-  top: 0;
   display: flex;
   width: 100%;
   min-height: 78px;
@@ -104,7 +102,6 @@
 
 @media (max-width: 920px) {
   .header {
-    position: sticky;
     display: grid;
     min-height: unset;
     padding: max(0px, env(safe-area-inset-top))
