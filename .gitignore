@@ -12,6 +12,8 @@
 /build
 /dist
 /.reports
+/playwright-report
+/test-results
 
 # misc
 .DS_Store

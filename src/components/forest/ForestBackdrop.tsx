@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react';
-import room from '@/assets/images/Комната.png';
-import distantForest from '@/assets/images/силуэтДальний.jpg';
-import middleForest from '@/assets/images/силуэтСредний.jpg';
-import workspace from '@/assets/images/рабочее_место.jpg';
+import room from '@/assets/images/optimized/Комната.webp';
+import distantForest from '@/assets/images/optimized/силуэтДальний.webp';
+import middleForest from '@/assets/images/optimized/силуэтСредний.webp';
+import workspace from '@/assets/images/optimized/рабочее_место.webp';
 import styles from './ForestBackdrop.module.scss';
 
 const sceneAnchors = ['home', 'about', 'expertise', 'writing', 'contact'];
