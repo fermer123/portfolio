@@ -1,0 +1,61 @@
+.backdrop {
+  position: fixed;
+  z-index: 0;
+  overflow: hidden;
+  background: #17100f;
+  inset: 0;
+  pointer-events: none;
+}
+
+.frame,
+.atmosphere {
+  position: absolute;
+  inset: 0;
+}
+
+.frame {
+  opacity: var(--frame-opacity, 0);
+  background-position: center;
+  background-size: cover;
+  transform: translate3d(0, var(--frame-shift, 0px), 0) scale(1.12);
+  will-change: opacity, transform;
+}
+
+.atmosphere {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20, 12, 10, 0.36),
+      rgba(20, 12, 10, 0.18) 63%,
+      rgba(20, 12, 10, 0.28)
+    ),
+    linear-gradient(
+      180deg,
+      rgba(20, 12, 10, 0.24),
+      transparent 42%,
+      rgba(20, 12, 10, 0.52)
+    );
+}
+
+@media (max-width: 700px) {
+  .frame {
+    background-position: 47% center;
+  }
+
+  .atmosphere {
+    background:
+      linear-gradient(90deg, rgba(20, 12, 10, 0.68), rgba(20, 12, 10, 0.3)),
+      linear-gradient(
+        180deg,
+        rgba(20, 12, 10, 0.22),
+        transparent 36%,
+        rgba(20, 12, 10, 0.78)
+      );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .frame {
+    transform: scale(1.02);
+  }
+}

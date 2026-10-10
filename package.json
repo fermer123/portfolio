@@ -1,0 +1,53 @@
+{
+  "name": "igor-smolin-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "homepage": "https://fermer123.github.io/portfolio/",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "typecheck": "tsc -b",
+    "build": "npm run typecheck && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "spellcheck": "cspell .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "i18next": "^26.4.2",
+    "normalize.css": "^8.0.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-i18next": "^17.0.16",
+    "react-icons": "^5.7.0",
+    "sass": "^1.105.1",
+    "vite": "^8.3.4"
+  },
+  "devDependencies": {
+    "@cspell/dict-ru_ru": "^2.3.3",
+    "@eslint/js": "^9.0.0",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "cspell": "^9.8.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "gh-pages": "6.1.1",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.9",
+    "rollup-plugin-visualizer": "^7.1.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.71.1"
+  }
+}

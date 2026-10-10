@@ -1,0 +1,299 @@
+@use '../../default_variables' as *;
+
+.section {
+  width: min(100% - 48px, 1160px);
+  margin: 0 auto;
+  padding: 94px 0 110px;
+  border-top: 1px solid $color-border;
+}
+
+.eyebrow {
+  margin: 0 0 13px;
+  color: $color-accent;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.about_intro {
+  display: grid;
+  max-width: 900px;
+  margin-bottom: 110px;
+  grid-template-columns: 0.8fr 1.2fr;
+  column-gap: 8%;
+
+  .eyebrow {
+    grid-column: 1 / -1;
+  }
+
+  h2 {
+    max-width: 460px;
+    color: $color-text;
+    font-size: clamp(32px, 4.2vw, 48px);
+    font-weight: 520;
+    letter-spacing: -0.055em;
+    line-height: 1.15;
+  }
+}
+
+.summary {
+  align-self: end;
+  color: $color-muted;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.section_heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 32px;
+
+  h2 {
+    color: $color-text;
+    font-size: 32px;
+    font-weight: 520;
+    letter-spacing: -0.05em;
+  }
+}
+
+.heading_note {
+  padding-bottom: 5px;
+  color: $color-muted;
+  font-size: 11px;
+}
+
+.timeline {
+  display: grid;
+  gap: 14px;
+}
+
+.role {
+  display: grid;
+  padding: 28px;
+  border: 1px solid $color-border;
+  border-radius: $radius-card;
+  background: rgba($color-surface, 0.86);
+  box-shadow: 0 10px 30px rgba(#60452f, 0.045);
+  grid-template-columns: 0.8fr 1.2fr;
+  column-gap: 8%;
+  transition:
+    border-color $transition-fast,
+    box-shadow $transition-fast,
+    transform $transition-fast;
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: rgba($color-accent, 0.32);
+    box-shadow: 0 15px 36px rgba(#60452f, 0.08);
+  }
+}
+
+.role_meta {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.company {
+  color: $color-accent;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.period,
+.location {
+  color: $color-muted;
+  font-size: 11px;
+}
+
+.role_content {
+  h3 {
+    color: $color-text;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .location {
+    margin-top: 5px;
+  }
+
+  .description {
+    margin-top: 17px;
+    color: $color-soft;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  ul {
+    display: grid;
+    margin: 14px 0 0;
+    padding-left: 17px;
+    gap: 8px;
+    color: $color-muted;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  li::marker {
+    color: $color-accent;
+  }
+}
+
+.result {
+  display: inline-flex;
+  margin-top: 18px;
+  padding: 8px 11px;
+  border: 1px solid rgba($color-accent, 0.23);
+  border-radius: $radius-pill;
+  background: rgba($color-accent, 0.07);
+  color: $color-accent;
+  font-size: 10px;
+  font-weight: 650;
+}
+
+.stack {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-top: 18px;
+  gap: 8px 12px;
+}
+
+.stack_label {
+  color: $color-soft;
+  font-size: 10px;
+  font-weight: 650;
+}
+
+.role_content .stack_list {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  gap: 6px;
+  list-style: none;
+
+  li {
+    padding: 5px 8px;
+    border: 1px solid $color-border;
+    border-radius: $radius-pill;
+    color: $color-muted;
+    font-size: 9px;
+    line-height: 1.2;
+  }
+
+  li::marker {
+    content: '';
+  }
+}
+
+.education {
+  display: grid;
+  margin-top: 100px;
+  grid-template-columns: 0.8fr 1.2fr;
+  column-gap: 8%;
+
+  h2 {
+    color: $color-text;
+    font-size: 32px;
+    font-weight: 520;
+    letter-spacing: -0.05em;
+  }
+}
+
+.education_items {
+  display: grid;
+  gap: 10px;
+
+  article {
+    display: grid;
+    padding: 17px 18px;
+    border: 1px solid $color-border;
+    border-radius: $radius-control;
+    background: rgba($color-surface, 0.68);
+    grid-template-columns: 105px 1fr;
+    column-gap: 14px;
+
+    h3 {
+      color: $color-text;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    p,
+    .institution {
+      grid-column: 2;
+      color: $color-muted;
+      font-size: 11px;
+      line-height: 1.6;
+    }
+  }
+}
+
+.education_date {
+  grid-row: span 3;
+  padding-top: 2px;
+  color: $color-accent;
+  font-size: 10px;
+  font-weight: 650;
+}
+
+@media (max-width: 800px) {
+  .heading_note {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .section {
+    width: min(100% - 40px, 460px);
+    padding: 70px 0 80px;
+  }
+
+  .about_intro,
+  .role,
+  .education {
+    grid-template-columns: 1fr;
+    row-gap: 18px;
+  }
+
+  .about_intro {
+    margin-bottom: 74px;
+
+    .eyebrow {
+      grid-column: auto;
+    }
+  }
+
+  .summary {
+    margin-top: 3px;
+  }
+
+  .role {
+    gap: 17px;
+    padding: 20px;
+  }
+
+  .role_meta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .role_content .description {
+    margin-top: 11px;
+  }
+
+  .education {
+    margin-top: 74px;
+  }
+
+  .education_items article {
+    grid-template-columns: 90px 1fr;
+  }
+}

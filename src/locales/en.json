@@ -1,0 +1,190 @@
+{
+  "meta": {
+    "title": "Igor Smolin — Full-Stack Engineer | React, TypeScript, Java"
+  },
+  "header": {
+    "homeLabel": "Igor Smolin — home",
+    "navigationLabel": "Main navigation",
+    "about": "About",
+    "experience": "Experience",
+    "expertise": "Expertise",
+    "writing": "Writing",
+    "contact": "Let’s talk",
+    "switchLanguage": "Switch to Russian"
+  },
+  "home": {
+    "eyebrow": "FULL STACK ENGINEER",
+    "specialties": "REACT · JAVA",
+    "titleFirst": "I build thoughtful",
+    "titleSecond": "digital products",
+    "intro": "Full-stack engineer with nearly 5 years of experience building web applications with React, TypeScript, Java, and Spring Boot. Experienced in microfrontend architecture, Java microservices, REST API integration, PostgreSQL, and performance optimization.",
+    "location": "Based in Russia",
+    "explore": "Explore my work",
+    "download": "Download CV",
+    "scroll": "Scroll to explore"
+  },
+  "about": {
+    "eyebrow": "Professional profile",
+    "title": "Full-stack development across frontend and backend.",
+    "summary": "Full-stack engineer with nearly 5 years of commercial experience delivering web applications in energy, retail, and enterprise software. Focused on React and TypeScript frontend development, Java and Spring Boot microservices, microfrontend architecture, and measurable improvements to application performance and business processes.",
+    "experienceEyebrow": "Professional experience",
+    "experienceTitle": "Experience",
+    "experienceNote": "Nearly 5 years across frontend and backend",
+    "stackLabel": "Technology stack",
+    "roles": [
+      {
+        "company": "BFT",
+        "role": "Full Stack Engineer",
+        "period": "Aug 2024 — Present",
+        "location": "Russia",
+        "description": "Developing high-load enterprise applications and dashboards across the frontend and backend.",
+        "details": [
+          "Design and develop scalable microfrontend architecture for enterprise web applications",
+          "Build Java microservices with Spring Boot and PostgreSQL",
+          "Develop React and TypeScript interfaces and integrate them with backend services via REST APIs",
+          "Optimize application performance, review code, and support production releases"
+        ],
+        "result": "Up to 30% performance improvement"
+      },
+      {
+        "company": "AXENIX",
+        "role": "Frontend Developer",
+        "period": "Aug 2023 — Aug 2024",
+        "location": "Moscow, Russia",
+        "description": "Developed a back-office platform for a large retail chain, contributing to a 25% improvement in operational efficiency.",
+        "details": [
+          "Built the application with React, TypeScript, Redux Toolkit, and TanStack Query",
+          "Implemented product workflows with Zod and Mantine",
+          "Contributed to scalable, modular frontend architecture"
+        ],
+        "result": "25% improvement in operational efficiency"
+      },
+      {
+        "company": "Fortum",
+        "role": "Frontend Developer",
+        "period": "Nov 2021 — Aug 2023 · 1 year 10 months",
+        "location": "Chelyabinsk, Russia",
+        "description": "Developed a single-page application (SPA) for monitoring remote device readings in the power and heat generation and supply sector.",
+        "details": [
+          "Built a React application from scratch with Webpack to collect, process, and display telemetry from remote devices",
+          "Designed and optimized SPA features, evaluating algorithm complexity to improve application performance",
+          "Debugged and refactored application code; improved a key project metric and delivered measurable business value"
+        ],
+        "stack": [
+          "React",
+          "JavaScript",
+          "TypeScript",
+          "React Testing Library",
+          "Jest",
+          "HTML",
+          "CSS",
+          "Sass",
+          "Webpack",
+          "ESLint",
+          "PostgreSQL",
+          "Redux",
+          "REST APIs"
+        ]
+      }
+    ],
+    "educationEyebrow": "Foundation",
+    "educationTitle": "Education",
+    "education": [
+      {
+        "period": "2018 — 2020",
+        "degree": "Master’s degree",
+        "program": "Information and Communication Technologies and Communication Systems",
+        "institution": "South Ural State University"
+      },
+      {
+        "period": "2014 — 2018",
+        "degree": "Bachelor’s degree",
+        "program": "Information and Communication Technologies and Communication Systems",
+        "institution": "South Ural State University"
+      },
+      {
+        "period": "2022",
+        "degree": "Advanced training",
+        "program": "PLC and Industrial Automation",
+        "institution": "MITI"
+      }
+    ]
+  },
+  "expertise": {
+    "eyebrow": "A practical toolkit",
+    "title": "Expertise",
+    "intro": "Core technologies and engineering practices used across production frontend applications, microfrontend architecture, and Java backend services.",
+    "skillsLabel": "{{title}} skills",
+    "groups": [
+      {
+        "title": "Frontend",
+        "summary": "Interfaces that stay clear as products grow.",
+        "skills": [
+          "React",
+          "TypeScript",
+          "JavaScript",
+          "Redux Toolkit",
+          "TanStack Query",
+          "Zod",
+          "Mantine",
+          "HTML",
+          "CSS",
+          "Sass",
+          "Jest",
+          "React Testing Library"
+        ]
+      },
+      {
+        "title": "Backend",
+        "summary": "Java microservices and reliable backend integrations.",
+        "skills": [
+          "Java",
+          "Spring Boot",
+          "Microservices",
+          "REST APIs",
+          "PostgreSQL"
+        ]
+      },
+      {
+        "title": "Architecture",
+        "summary": "Modular applications built for independent delivery.",
+        "skills": ["Microfrontends", "Module Federation 2.0", "Webpack", "Vite"]
+      },
+      {
+        "title": "Engineering practice",
+        "summary": "Quality, performance, and maintainable delivery.",
+        "skills": [
+          "Performance optimization",
+          "Code review",
+          "Refactoring",
+          "High-load systems",
+          "ESLint"
+        ]
+      }
+    ]
+  },
+  "writing": {
+    "eyebrow": "Ideas worth sharing",
+    "title": "Writing",
+    "publication": "HABR",
+    "date": "APR 2025",
+    "readTime": "8 MIN READ",
+    "articleTitle": "Микрофронтенд на пальцах с Module Federation 2.0",
+    "description": "An approachable guide to how microfrontends fit together: hosts and remotes, shared dependencies, async loading, generated types, and resilient error handling.",
+    "readArticle": "Read the article"
+  },
+  "contact": {
+    "eyebrow": "Have a good problem to solve?",
+    "titleFirst": "Let’s build something",
+    "titleSecond": "worth using.",
+    "getInTouch": "Get in touch",
+    "labels": {
+      "email": "Email",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "telegram": "Telegram"
+    },
+    "backToTop": "Back to top ↑",
+    "credit": "Designed with care · Built with React"
+  }
+}

@@ -1,0 +1,146 @@
+@use '../../default_variables' as *;
+
+.section {
+  padding: 96px max(24px, calc((100vw - 1160px) / 2)) 105px;
+  background: rgba($color-surface-alt, 0.86);
+}
+
+.heading {
+  max-width: 530px;
+  margin-bottom: 42px;
+
+  h2 {
+    color: $color-text;
+    font-size: 38px;
+    font-weight: 520;
+    letter-spacing: -0.055em;
+  }
+}
+
+.eyebrow {
+  margin: 0 0 13px;
+  color: $color-accent;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.intro {
+  margin-top: 12px;
+  color: $color-muted;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.groups {
+  display: grid;
+  max-width: 1160px;
+  margin: 0 auto;
+  gap: 11px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.group {
+  min-height: 255px;
+  padding: 22px 21px 25px;
+  border: 1px solid rgba(#76563f, 0.13);
+  border-radius: $radius-card;
+  background: rgba($color-surface, 0.76);
+  box-shadow: 0 8px 22px rgba(#60452f, 0.04);
+  transition:
+    background $transition-fast,
+    border-color $transition-fast,
+    transform $transition-fast,
+    box-shadow $transition-fast;
+
+  &:hover {
+    transform: translateY(-3px);
+    border-color: rgba($color-accent, 0.3);
+    background: $color-surface;
+    box-shadow: 0 14px 30px rgba(#60452f, 0.08);
+  }
+
+  h3 {
+    margin-top: 29px;
+    color: $color-text;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+  }
+
+  > p {
+    min-height: 34px;
+    margin-top: 7px;
+    color: $color-muted;
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 17px 0 0;
+    padding: 0;
+    gap: 6px;
+    list-style: none;
+  }
+
+  li {
+    padding: 6px 8px;
+    border: 1px solid rgba(#76563f, 0.14);
+    background: rgba(#fff, 0.3);
+    border-radius: $radius-pill;
+    color: $color-soft;
+    font-size: 9px;
+    line-height: 1.2;
+  }
+}
+
+.group_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.number {
+  color: $color-muted;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  color: $color-accent;
+  stroke-width: 1.5;
+}
+
+@media (max-width: 1080px) {
+  .groups {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 580px) {
+  .section {
+    padding: 72px 20px 78px;
+  }
+
+  .groups {
+    grid-template-columns: 1fr;
+  }
+
+  .group {
+    min-height: unset;
+    padding: 20px;
+
+    h3 {
+      margin-top: 18px;
+    }
+
+    > p {
+      min-height: unset;
+    }
+  }
+}
