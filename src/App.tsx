@@ -13,8 +13,20 @@ function App() {
   const { i18n, t } = useTranslation();
 
   useEffect(() => {
+    const title = t('meta.title');
+    const description = t('meta.description');
+
     document.documentElement.lang = i18n.resolvedLanguage ?? 'en';
-    document.title = t('meta.title');
+    document.title = title;
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute('content', description);
+    document
+      .querySelector('meta[property="og:title"]')
+      ?.setAttribute('content', title);
+    document
+      .querySelector('meta[property="og:description"]')
+      ?.setAttribute('content', description);
   }, [i18n, i18n.resolvedLanguage, t]);
 
   return (

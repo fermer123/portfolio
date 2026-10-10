@@ -1,6 +1,7 @@
 {
   "meta": {
-    "title": "Igor Smolin — Full-Stack Engineer | React, TypeScript, Java"
+    "title": "Igor Smolin — Full-Stack Engineer | React, TypeScript, Java",
+    "description": "Full-stack engineer with nearly 6 years of experience building web applications with React, TypeScript, Java, and Spring Boot."
   },
   "header": {
     "homeLabel": "Igor Smolin — home",
@@ -44,20 +45,20 @@
           "Develop React and TypeScript interfaces and integrate them with backend services via REST APIs",
           "Optimize application performance, review code, and support production releases"
         ],
-        "result": "Up to 30% performance improvement"
+        "result": "Improved application performance by up to 30%"
       },
       {
         "company": "AXENIX",
         "role": "Frontend Developer",
         "period": "Aug 2023 — Aug 2024",
         "location": "Moscow, Russia",
-        "description": "Developed a back-office platform for a large retail chain, contributing to a 25% improvement in operational efficiency.",
+        "description": "Developed a back-office platform for a large retail chain.",
         "details": [
           "Built the application with React, TypeScript, Redux Toolkit, and TanStack Query",
           "Implemented product workflows with Zod and Mantine",
           "Contributed to scalable, modular frontend architecture"
         ],
-        "result": "25% improvement in operational efficiency"
+        "result": "Contributed to a 25% improvement in operational efficiency"
       },
       {
         "company": "Fortum",
