@@ -5,6 +5,7 @@
 :root {
   --header-height: 78px;
 
+  overflow-x: clip;
   font-family: $font-body;
   color: $color-text;
   background: $color-background;

@@ -4,7 +4,7 @@ import 'normalize.css';
 
 import './i18n';
 import App from '@/App';
-import './index.module.scss';
+import './index.scss';
 
 const rootElement = document.getElementById('root');
 
