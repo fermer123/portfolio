@@ -7,7 +7,7 @@ import {
 import { useTranslation } from 'react-i18next';
 import styles from './Home.module.scss';
 
-const Home = () => {
+const Home = ({ onGenerateResume }: { onGenerateResume: () => void }) => {
   const { t } = useTranslation();
 
   return (
@@ -32,13 +32,13 @@ const Home = () => {
           <a className={styles.primary_action} href="#experience">
             {t('home.explore')} <FiArrowUpRight aria-hidden="true" />
           </a>
-          <a
+          <button
             className={styles.secondary_action}
-            href={`${import.meta.env.BASE_URL}Igor-Smolin-CV.pdf`}
-            download
+            type="button"
+            onClick={onGenerateResume}
           >
             <FiDownload aria-hidden="true" /> {t('home.download')}
-          </a>
+          </button>
         </div>
         <a className={styles.scroll_hint} href="#about">
           <FiArrowDown aria-hidden="true" /> {t('home.scroll')}

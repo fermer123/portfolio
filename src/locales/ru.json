@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Игорь Смолин — Full Stack-разработчик | React, Java, TypeScript",
-    "description": "Full Stack-разработчик почти с 6-летним опытом создания веб-приложений на React, TypeScript, Java и Spring Boot."
+    "description": "Full Stack-разработчик почти с 6-летним опытом: React и TypeScript на frontend, Java и Spring Boot на backend, Docker, Kubernetes и RabbitMQ."
   },
   "header": {
     "homeLabel": "Игорь Смолин — на главную",
@@ -18,16 +18,23 @@
     "specialties": "REACT · JAVA",
     "titleFirst": "Создаю продуманные",
     "titleSecond": "цифровые продукты",
-    "intro": "Full Stack-разработчик почти с 6-летним опытом: создаю веб-приложения на React и TypeScript, разрабатываю микросервисы на Java и Spring Boot. Работаю с микрофронтенд-архитектурой, REST API, PostgreSQL и оптимизацией производительности.",
+    "intro": "Full Stack-разработчик почти с 6-летним опытом: создаю веб-приложения на React и TypeScript, разрабатываю микросервисы на Java и Spring Boot. Работаю с REST API, PostgreSQL, RabbitMQ, Docker и Kubernetes.",
     "location": "Россия",
     "explore": "Мой опыт",
     "download": "Скачать резюме",
     "scroll": "Листайте дальше"
   },
+  "resume": {
+    "actionsLabel": "Действия с резюме",
+    "back": "Вернуться на сайт",
+    "savePdf": "Сохранить как PDF",
+    "profile": "Профиль",
+    "skills": "Ключевые навыки"
+  },
   "about": {
     "eyebrow": "Профессиональный профиль",
     "title": "Full Stack-разработка frontend- и backend-систем.",
-    "summary": "Full Stack-разработчик почти с 6-летним коммерческим опытом создания веб-приложений для энергетики, розничной торговли и корпоративных систем. Основные направления — frontend-разработка на React и TypeScript, Java-микросервисы на Spring Boot, микрофронтенд-архитектура и измеримое улучшение производительности приложений и бизнес-процессов.",
+    "summary": "Full Stack-разработчик почти с 6-летним коммерческим опытом создания веб-приложений для энергетики, розничной торговли и корпоративных систем. Разрабатываю frontend на React и TypeScript и backend на Java и Spring Boot; работаю с микросервисами, REST API, PostgreSQL, RabbitMQ, Docker и Kubernetes.",
     "experienceEyebrow": "Опыт работы",
     "experienceTitle": "Опыт работы",
     "experienceNote": "Почти 6 лет во frontend- и backend-разработке",
@@ -38,13 +45,15 @@
         "role": "Full Stack-разработчик",
         "period": "Август 2024 — настоящее время",
         "location": "Россия",
-        "description": "Разрабатываю высоконагруженные корпоративные приложения и панели управления на frontend и backend.",
+        "description": "Разрабатываю frontend и backend высоконагруженных корпоративных приложений и панелей управления.",
         "details": [
           "Проектирую и развиваю масштабируемую микрофронтенд-архитектуру корпоративных веб-приложений",
           "Разрабатываю Java-микросервисы на Spring Boot с использованием PostgreSQL",
           "Создаю интерфейсы на React и TypeScript и интегрирую их с backend-сервисами через REST API",
+          "Настраиваю обмен сообщениями через RabbitMQ, контейнеризирую приложения с Docker и использую Kubernetes для оркестрации",
           "Оптимизирую производительность приложений, провожу ревью кода и сопровождаю выпуск решений в production"
         ],
+        "stack": ["Java", "Spring Boot", "PostgreSQL", "REST API", "RabbitMQ", "Docker", "Kubernetes", "React", "TypeScript"],
         "result": "Улучшил производительность приложения до 30%"
       },
       {
@@ -77,10 +86,8 @@
           "TypeScript",
           "React Testing Library",
           "Jest",
-          "HTML",
-          "CSS",
-          "Sass",
           "Webpack",
+          "Tailwind CSS",
           "ESLint",
           "PostgreSQL",
           "Redux",
@@ -114,7 +121,7 @@
   "expertise": {
     "eyebrow": "Инструменты и подходы",
     "title": "Компетенции",
-    "intro": "Основные технологии и инженерные практики для разработки frontend-приложений, микрофронтенд-архитектуры и backend-сервисов на Java.",
+    "intro": "Основные технологии и инженерные практики для frontend-приложений, backend-сервисов на Java, контейнеризации и развертывания.",
     "skillsLabel": "Навыки: {{title}}",
     "groups": [
       {
@@ -127,35 +134,39 @@
           "Redux Toolkit",
           "TanStack Query",
           "Zod",
-          "Mantine",
-          "HTML",
-          "CSS",
-          "Sass",
+          "Webpack",
+          "Vite",
           "Jest",
           "React Testing Library"
         ]
       },
       {
         "title": "Backend",
-        "summary": "Java-микросервисы и надёжное взаимодействие сервисов.",
+        "summary": "Java-микросервисы, обмен сообщениями и контейнеризация сервисов.",
         "skills": [
           "Java",
           "Spring Boot",
           "Микросервисы",
           "REST API",
-          "PostgreSQL"
+          "PostgreSQL",
+          "RabbitMQ",
+          "Docker",
+          "Kubernetes"
         ]
       },
       {
         "title": "Архитектура",
-        "summary": "Модульные приложения с независимым развитием компонентов.",
-        "skills": ["Микрофронтенды", "Module Federation 2.0", "Webpack", "Vite"]
+        "summary": "Архитектура приложений, которую удобно развивать и масштабировать.",
+        "skills": ["Frontend-архитектура", "Микрофронтенды", "Module Federation 2.0"]
       },
       {
         "title": "Инженерная практика",
         "summary": "Качество, производительность и удобство сопровождения.",
         "skills": [
           "Оптимизация производительности",
+          "Core Web Vitals",
+          "Доступность интерфейсов (WCAG)",
+          "Playwright",
           "Ревью кода",
           "Рефакторинг",
           "Высоконагруженные системы",

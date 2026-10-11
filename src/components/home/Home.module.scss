@@ -105,6 +105,8 @@
   border-radius: $radius-control;
   font-size: 12px;
   font-weight: 650;
+  font-family: inherit;
+  cursor: pointer;
   transition:
     background $transition-fast,
     border-color $transition-fast,

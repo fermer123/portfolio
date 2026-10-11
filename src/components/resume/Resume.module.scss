@@ -1,0 +1,194 @@
+@use '../../default_variables' as *;
+
+.page {
+  min-height: 100vh;
+  padding: 28px 20px 56px;
+  background: #eeece7;
+  color: #252321;
+  font-family: Arial, sans-serif;
+}
+
+.actions {
+  display: flex;
+  width: min(100%, 850px);
+  justify-content: space-between;
+  margin: 0 auto 18px;
+
+  button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 15px;
+    border: 1px solid #d4cfc7;
+    border-radius: 8px;
+    background: white;
+    color: #252321;
+    font: inherit;
+    cursor: pointer;
+  }
+}
+
+.document {
+  width: min(100%, 850px);
+  min-height: 1100px;
+  margin: 0 auto;
+  padding: 54px 62px;
+  background: white;
+  box-shadow: 0 14px 48px rgba(33, 30, 25, 0.12);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 22px;
+  border-bottom: 2px solid #8b5b3d;
+}
+
+.header h1 {
+  margin: 5px 0;
+  font-family: Georgia, serif;
+  font-size: 34px;
+  letter-spacing: -0.04em;
+}
+
+.eyebrow,
+.position,
+.contacts,
+.role_heading p,
+.role_heading span {
+  margin: 0;
+  color: #66615c;
+}
+
+.eyebrow {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.position {
+  font-size: 13px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 10px;
+}
+
+.section {
+  margin-top: 22px;
+  break-inside: avoid;
+
+  h2 {
+    margin: 0 0 9px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ded9d2;
+    color: #805339;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 5px 0;
+  }
+}
+
+.role {
+  margin-top: 13px;
+  break-inside: avoid;
+
+  ul {
+    margin: 5px 0;
+    padding-left: 17px;
+  }
+
+  li {
+    margin: 2px 0;
+  }
+}
+
+.role_heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+
+  h3 {
+    margin: 0;
+    font-size: 13px;
+  }
+}
+
+.stack {
+  color: #5c5751;
+  font-size: 10px;
+}
+
+.result {
+  color: #805339;
+  font-weight: 700;
+}
+
+.skills p,
+.education p {
+  margin: 5px 0;
+}
+
+@page {
+  size: A4;
+  margin: 14mm;
+}
+
+@media print {
+  :global(html),
+  :global(body) {
+    min-width: 0;
+    background: white;
+    color: #252321;
+    font-family: Arial, sans-serif;
+  }
+
+  .page {
+    min-height: 0;
+    padding: 0;
+    background: white;
+  }
+
+  .actions {
+    display: none;
+  }
+
+  .document {
+    width: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+
+  .header h1 {
+    font-size: 26pt;
+  }
+
+  .section {
+    margin-top: 16pt;
+  }
+
+  .role {
+    margin-top: 9pt;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

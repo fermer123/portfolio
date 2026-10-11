@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Igor Smolin — Full-Stack Engineer | React, TypeScript, Java",
-    "description": "Full-stack engineer with nearly 6 years of experience building web applications with React, TypeScript, Java, and Spring Boot."
+    "description": "Full-stack engineer with nearly 6 years of experience across React and TypeScript frontend development and Java, Spring Boot, Docker, Kubernetes, and RabbitMQ backend systems."
   },
   "header": {
     "homeLabel": "Igor Smolin — home",
@@ -18,16 +18,23 @@
     "specialties": "REACT · JAVA",
     "titleFirst": "I build thoughtful",
     "titleSecond": "digital products",
-    "intro": "Full-stack engineer with nearly 6 years of experience building web applications with React, TypeScript, Java, and Spring Boot. Experienced in microfrontend architecture, Java microservices, REST API integration, PostgreSQL, and performance optimization.",
+    "intro": "Full-stack engineer with nearly 6 years of experience building web applications with React and TypeScript and Java microservices with Spring Boot. Experienced with REST APIs, PostgreSQL, RabbitMQ, Docker, and Kubernetes.",
     "location": "Based in Russia",
     "explore": "Explore my work",
     "download": "Download CV",
     "scroll": "Scroll to explore"
   },
+  "resume": {
+    "actionsLabel": "Resume actions",
+    "back": "Back to portfolio",
+    "savePdf": "Save as PDF",
+    "profile": "Profile",
+    "skills": "Key skills"
+  },
   "about": {
     "eyebrow": "Professional profile",
     "title": "Full-stack development across frontend and backend.",
-    "summary": "Full-stack engineer with nearly 6 years of commercial experience delivering web applications in energy, retail, and enterprise software. Focused on React and TypeScript frontend development, Java and Spring Boot microservices, microfrontend architecture, and measurable improvements to application performance and business processes.",
+    "summary": "Full-stack engineer with nearly 6 years of commercial experience delivering web applications in energy, retail, and enterprise software. I build frontend applications with React and TypeScript and backend services with Java and Spring Boot, working with microservices, REST APIs, PostgreSQL, RabbitMQ, Docker, and Kubernetes.",
     "experienceEyebrow": "Professional experience",
     "experienceTitle": "Experience",
     "experienceNote": "Nearly 6 years across frontend and backend",
@@ -38,13 +45,15 @@
         "role": "Full Stack Engineer",
         "period": "Aug 2024 — Present",
         "location": "Russia",
-        "description": "Developing high-load enterprise applications and dashboards across the frontend and backend.",
+        "description": "Developing frontend and backend components for high-load enterprise applications and dashboards.",
         "details": [
           "Design and develop scalable microfrontend architecture for enterprise web applications",
           "Build Java microservices with Spring Boot and PostgreSQL",
           "Develop React and TypeScript interfaces and integrate them with backend services via REST APIs",
+          "Set up messaging with RabbitMQ, containerize applications with Docker, and use Kubernetes for orchestration",
           "Optimize application performance, review code, and support production releases"
         ],
+        "stack": ["Java", "Spring Boot", "PostgreSQL", "REST APIs", "RabbitMQ", "Docker", "Kubernetes", "React", "TypeScript"],
         "result": "Improved application performance by up to 30%"
       },
       {
@@ -77,10 +86,8 @@
           "TypeScript",
           "React Testing Library",
           "Jest",
-          "HTML",
-          "CSS",
-          "Sass",
           "Webpack",
+          "Tailwind CSS",
           "ESLint",
           "PostgreSQL",
           "Redux",
@@ -114,7 +121,7 @@
   "expertise": {
     "eyebrow": "A practical toolkit",
     "title": "Expertise",
-    "intro": "Core technologies and engineering practices used across production frontend applications, microfrontend architecture, and Java backend services.",
+    "intro": "Core technologies and engineering practices for frontend applications, Java backend services, containerization, and deployment.",
     "skillsLabel": "{{title}} skills",
     "groups": [
       {
@@ -127,35 +134,39 @@
           "Redux Toolkit",
           "TanStack Query",
           "Zod",
-          "Mantine",
-          "HTML",
-          "CSS",
-          "Sass",
+          "Webpack",
+          "Vite",
           "Jest",
           "React Testing Library"
         ]
       },
       {
         "title": "Backend",
-        "summary": "Java microservices and reliable backend integrations.",
+        "summary": "Java microservices, messaging, and service containerization.",
         "skills": [
           "Java",
           "Spring Boot",
           "Microservices",
           "REST APIs",
-          "PostgreSQL"
+          "PostgreSQL",
+          "RabbitMQ",
+          "Docker",
+          "Kubernetes"
         ]
       },
       {
         "title": "Architecture",
-        "summary": "Modular applications built for independent delivery.",
-        "skills": ["Microfrontends", "Module Federation 2.0", "Webpack", "Vite"]
+        "summary": "Application architecture designed for maintainability and scale.",
+        "skills": ["Frontend architecture", "Microfrontends", "Module Federation 2.0"]
       },
       {
         "title": "Engineering practice",
         "summary": "Quality, performance, and maintainable delivery.",
         "skills": [
           "Performance optimization",
+          "Core Web Vitals",
+          "Web accessibility (WCAG)",
+          "Playwright",
           "Code review",
           "Refactoring",
           "High-load systems",

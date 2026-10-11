@@ -45,7 +45,6 @@
     "node_modules/**",
     "dist/**",
     "package-lock.json",
-    "public/Igor-Smolin-CV.pdf",
     "public/favicon.ico"
   ]
 }
