@@ -53,7 +53,17 @@
           "Настраиваю обмен сообщениями через RabbitMQ, контейнеризирую приложения с Docker и использую Kubernetes для оркестрации",
           "Оптимизирую производительность приложений, провожу ревью кода и сопровождаю выпуск решений в production"
         ],
-        "stack": ["Java", "Spring Boot", "PostgreSQL", "REST API", "RabbitMQ", "Docker", "Kubernetes", "React", "TypeScript"],
+        "stack": [
+          "Java",
+          "Spring Boot",
+          "PostgreSQL",
+          "REST API",
+          "RabbitMQ",
+          "Docker",
+          "Kubernetes",
+          "React",
+          "TypeScript"
+        ],
         "result": "Улучшил производительность приложения до 30%"
       },
       {
@@ -157,7 +167,11 @@
       {
         "title": "Архитектура",
         "summary": "Архитектура приложений, которую удобно развивать и масштабировать.",
-        "skills": ["Frontend-архитектура", "Микрофронтенды", "Module Federation 2.0"]
+        "skills": [
+          "Frontend-архитектура",
+          "Микрофронтенды",
+          "Module Federation 2.0"
+        ]
       },
       {
         "title": "Инженерная практика",

@@ -51,17 +51,22 @@ const Resume = ({ onClose }: ResumeProps) => {
                 <div className={styles.role_heading}>
                   <div>
                     <h3>{role.company}</h3>
-                    <p>{role.role} · {role.location}</p>
+                    <p>
+                      {role.role} · {role.location}
+                    </p>
                   </div>
                   <span>{role.period}</span>
                 </div>
                 <p>{role.description}</p>
                 <ul>
-                  {role.details.map((detail) => <li key={detail}>{detail}</li>)}
+                  {role.details.map((detail) => (
+                    <li key={detail}>{detail}</li>
+                  ))}
                 </ul>
                 {role.stack && (
                   <p className={styles.stack}>
-                    <strong>{t('about.stackLabel')}:</strong> {role.stack.join(' · ')}
+                    <strong>{t('about.stackLabel')}:</strong>{' '}
+                    {role.stack.join(' · ')}
                   </p>
                 )}
                 {role.result && <p className={styles.result}>{role.result}</p>}
@@ -86,7 +91,10 @@ const Resume = ({ onClose }: ResumeProps) => {
           <div className={styles.education}>
             {education.map((item) => (
               <p key={`${item.degree}-${item.period}`}>
-                <strong>{item.degree}, {item.period}</strong> · {item.program} · {item.institution}
+                <strong>
+                  {item.degree}, {item.period}
+                </strong>{' '}
+                · {item.program} · {item.institution}
               </p>
             ))}
           </div>

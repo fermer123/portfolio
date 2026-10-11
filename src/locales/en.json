@@ -53,7 +53,17 @@
           "Set up messaging with RabbitMQ, containerize applications with Docker, and use Kubernetes for orchestration",
           "Optimize application performance, review code, and support production releases"
         ],
-        "stack": ["Java", "Spring Boot", "PostgreSQL", "REST APIs", "RabbitMQ", "Docker", "Kubernetes", "React", "TypeScript"],
+        "stack": [
+          "Java",
+          "Spring Boot",
+          "PostgreSQL",
+          "REST APIs",
+          "RabbitMQ",
+          "Docker",
+          "Kubernetes",
+          "React",
+          "TypeScript"
+        ],
         "result": "Improved application performance by up to 30%"
       },
       {
@@ -157,7 +167,11 @@
       {
         "title": "Architecture",
         "summary": "Application architecture designed for maintainability and scale.",
-        "skills": ["Frontend architecture", "Microfrontends", "Module Federation 2.0"]
+        "skills": [
+          "Frontend architecture",
+          "Microfrontends",
+          "Module Federation 2.0"
+        ]
       },
       {
         "title": "Engineering practice",
